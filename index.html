@@ -19,24 +19,45 @@
 </header>
 
 <section class="banner">
-    <h2>Bienvenido al mundo gamer y mas</h2>
-    <p>Explora los mejores videojuegos, noticias y más</p>
-    <a href="juegos.html" class="btn">Ver Juegos</a>
-</section>
+
 <section class="banner">
     <h2>Bienvenido al mundo gamer y más</h2>
     <p>Explora los mejores videojuegos, noticias y más</p>
     <a href="juegos.html" class="btn">Ver Juegos</a>
+<div class="carrusel">
+    <button class="prev">&#10094;</button>
 
-    <!-- 🎞️ CARRUSEL -->
-    <div class="carrusel">
-        <div class="slides">
-            <img src="img/juego1.jpg" alt="">
-            <img src="img/juego2.jpg" alt="">
-            <img src="img/juego3.jpg" alt="">
-        </div>
+    <div class="slides">
+        <img src="https://static.wikia.nocookie.net/esgta/images/1/1b/Car%C3%A1tula_GTA_V.jpg/revision/latest?cb=20130402191528" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1n7CJBXbzxRH-RMdY-ZujDS6LiLCyG0AzA&s" alt="">
+        <img src="https://store-images.s-microsoft.com/image/apps.42015.13966330883349940.e8d96f51-63dc-4377-8441-88d85afdd80a.d84cbd17-ae03-4537-8641-8c33c308de78" alt="">
+        <img src="https://play-lh.googleusercontent.com/D__1dw4a7Li_h6peAbJyrrkFcAmbHzfJXzm91G6d15tWVPCkpLaPpQHjp8p1sJcvSGI=w720-h405-rw" alt="">
     </div>
-</section>
 
+    <button class="next">&#10095;</button>
+</div>
+</section>
+<script>
+let index = 0;
+
+const slides = document.querySelector('.slides');
+const total = document.querySelectorAll('.slides img').length;
+
+document.querySelector('.next').addEventListener('click', () => {
+    index++;
+    if (index >= total) index = 0;
+    actualizar();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    index--;
+    if (index < 0) index = total - 1;
+    actualizar();
+});
+
+function actualizar() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+</script>
 </body>
 </html>

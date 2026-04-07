@@ -68,3 +68,36 @@ button {
     padding: 10px;
     cursor: pointer;
 }
+
+.juegos-populares {
+  padding: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: red;
+}

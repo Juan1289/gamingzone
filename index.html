@@ -10,38 +10,63 @@
 
 <header>
     <h1>🎮 GamingZone</h1>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="juegos.html">Juegos</a>
-    <a href="eventos.html">Eventos</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="venta.html">💰 Vender</a>
-</nav>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="juegos.html">Juegos</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="venta.html">💰 Vender</a>
+    </nav>
 </header>
-
-<section class="banner">
 
 <section class="banner">
 
     <h2>Bienvenido al mundo gamer y más</h2>
     <p>Explora los mejores videojuegos, y más</p>
-<div class="carrusel">
-    <button class="prev">&#10094;</button>
 
-    <div class="slides">
-        <img src="https://static.wikia.nocookie.net/esgta/images/1/1b/Car%C3%A1tula_GTA_V.jpg/revision/latest?cb=20130402191528" alt="">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1n7CJBXbzxRH-RMdY-ZujDS6LiLCyG0AzA&s" alt="">
-        <img src="https://store-images.s-microsoft.com/image/apps.42015.13966330883349940.e8d96f51-63dc-4377-8441-88d85afdd80a.d84cbd17-ae03-4537-8641-8c33c308de78" alt="">
-        <img src="https://play-lh.googleusercontent.com/D__1dw4a7Li_h6peAbJyrrkFcAmbHzfJXzm91G6d15tWVPCkpLaPpQHjp8p1sJcvSGI=w720-h405-rw" alt="">
-        <img src="https://img.utdstc.com/screen/213/b95/213b959901a318bd45e6a99ce2f3b4148aacc7219d5987857bd14b48a659d36a:400" alt="">
-       <img src="https://cdn1.epicgames.com/offer/fn/FNBR_40-00_C7S2_EGS_Launcher_FN_Blade_2560x1440_2560x1440-325670227bc348a4a289570c1f099640" alt="">
-        
+    <!-- CARRUSEL -->
+    <div class="carrusel">
+        <button class="prev">&#10094;</button>
+
+        <div class="slides">
+            <img src="https://static.wikia.nocookie.net/esgta/images/1/1b/Car%C3%A1tula_GTA_V.jpg/revision/latest?cb=20130402191528">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1n7CJBXbzxRH-RMdY-ZujDS6LiLCyG0AzA&s">
+            <img src="https://store-images.s-microsoft.com/image/apps.42015.13966330883349940.e8d96f51-63dc-4377-8441-88d85afdd80a.d84cbd17-ae03-4537-8641-8c33c308de78">
+            <img src="https://play-lh.googleusercontent.com/D__1dw4a7Li_h6peAbJyrrkFcAmbHzfJXzm91G6d15tWVPCkpLaPpQHjp8p1sJcvSGI=w720-h405-rw">
+            <img src="https://img.utdstc.com/screen/213/b95/213b959901a318bd45e6a99ce2f3b4148aacc7219d5987857bd14b48a659d36a:400">
+            <img src="https://cdn1.epicgames.com/offer/fn/FNBR_40-00_C7S2_EGS_Launcher_FN_Blade_2560x1440_2560x1440-325670227bc348a4a289570c1f099640">
+        </div>
+
+        <button class="next">&#10095;</button>
     </div>
-     <button class="next">&#10095;</button>
+
+</section>
+
+<!-- TARJETAS -->
+<div class="contenedor-cards">
+
+    <div class="card-noticia">
+        <img src="https://powerups.es/wp-content/uploads/2026/02/PlaystationPlus_marzo25-849x478.jpeg">
+        <h3>Top juegos del mes</h3>
+        <p>Los juegos más populares actualmente.</p>
+        <a href="topjuegos.html">
+            <button>Ver top juegos</button>
+        </a>
+    </div>
+
+    <div class="card-noticia">
+        <img src="https://weezevent.com/wp-content/uploads/2018/10/15140712/compet_esport.jpg">
+        <h3>Eventos y torneos</h3>
+        <p>Próximos eventos eSports.</p>
+        <a href="eventos.html">
+            <button>Ver eventos</button>
+        </a>
+    </div>
 
 </div>
-</section>
+
+<!-- JS -->
 <script>
 let index = 0;
 
@@ -63,30 +88,7 @@ document.querySelector('.prev').addEventListener('click', () => {
 function actualizar() {
     slides.style.transform = `translateX(-${index * 100}%)`;
 }
-
 </script>
-<div class="contenedor-cards">
 
-
-    <div class="card-noticia">
-        <img src="https://powerups.es/wp-content/uploads/2026/02/PlaystationPlus_marzo25-849x478.jpeg">
-        <h3>Top juegos del mes</h3>
-        <p>Los juegos más populares actualmente.</p>
-        <a href="topjuegos.html">
-    <button>Ver top juegos</button>
-</a>
-    </div>
-
-    <div class="card-noticia">
-        <img src="https://weezevent.com/wp-content/uploads/2018/10/15140712/compet_esport.jpg">
-        <h3>Eventos y torneos</h3>
-        <p>Próximos eventos eSports.</p>
-      <a href="eventos.html">
-    <button>Ver eventos</button>
-</a>
-    </div>
-
-</div>
-</div>
 </body>
 </html>

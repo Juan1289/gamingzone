@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Vender Juego</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<div class="barra-superior">
+    <button class="btn-volver" onclick="history.back()">⬅ Volver</button>
+</div>
+
+<h2 class="titulo-venta">💰 Publica tu Juego</h2>
+
+<div class="venta-container">
+
+    <form class="formulario" id="formVenta">
+
+        <input type="text" id="nombreJuego" placeholder="Nombre del juego" required>
+
+        <input type="text" id="categoria" placeholder="Categoría (Acción, Deportes...)" required>
+
+        <input type="text" id="plataforma" placeholder="Plataforma" required>
+
+        <input type="number" id="precio" placeholder="Precio $" required>
+
+        <textarea id="descripcion" placeholder="Descripción del juego"></textarea>
+
+        <button type="submit">Publicar</button>
+
+    </form>
+
+</div>
+
+<script>
+document.getElementById("formVenta").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Juego publicado correctamente 🎮🔥");
+    this.reset();
+});
+</script>
+
+</body>
+</html>

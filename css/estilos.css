@@ -111,3 +111,547 @@ button {
 .prev:hover, .next:hover {
     background: #38bdf8;
 }
+
+.contenedor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card-noticia {
+    background: #020617;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px #38bdf8;
+    transition: 0.3s;
+}
+
+.card-noticia:hover {
+    transform: translateY(-10px);
+}
+
+.card-noticia img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-noticia h3 {
+    padding: 10px;
+}
+
+.card-noticia p {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.card-noticia button {
+    margin: 10px;
+    width: calc(100% - 20px);
+    background: #38bdf8;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card-noticia button:hover {
+    background: #0ea5e9;
+}
+
+
+.titulo-eventos {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+/* CONTENEDOR */
+.eventos-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* TARJETAS */
+.evento-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #020617;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(56,189,248,0.2);
+    transition: 0.3s;
+}
+
+.evento-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+/* IMAGEN */
+.evento-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* INFO */
+.evento-info h3 {
+    margin: 0;
+}
+
+.evento-info p {
+    margin: 3px 0;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* RANKING */
+.ranking {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 22px;
+}
+
+/* DESTACAR TOP 1 */
+.top1 {
+    border-left: 5px solid gold;
+}
+
+/* BOTÓN VOLVER */
+.barra-superior {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.btn-volver {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-volver:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+/* TITULO */
+.titulo-eventos {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+    text-shadow: 0 0 12px #38bdf8;
+}
+
+/* CONTENEDOR */
+.eventos-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* TARJETAS */
+.evento-card {
+    display: flex;
+    background: linear-gradient(145deg, #020617, #0f172a);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(56,189,248,0.3);
+    transition: 0.3s;
+}
+
+.evento-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* IMAGEN */
+.evento-card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* INFO */
+.evento-info {
+    padding: 15px;
+    color: white;
+}
+
+.evento-info h3 {
+    margin: 0;
+}
+
+.evento-info p {
+    margin: 5px 0;
+    color: #94a3b8;
+}
+
+/* BOTÓN */
+.evento-info button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.evento-info button:hover {
+    background: #0ea5e9;
+}
+/* TITULO */
+.titulo-juegos {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+/* CONTENEDOR */
+.juegos-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* TARJETAS */
+.juego-card {
+    background: linear-gradient(145deg, #020617, #0f172a);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(56,189,248,0.2);
+}
+
+/* HOVER */
+.juego-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+/* IMAGEN PEQUEÑA Y CENTRADA */
+.juego-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0 0 10px #38bdf8;
+}
+
+/* INFO */
+.juego-info h3 {
+    margin: 10px 0 5px;
+}
+
+.juego-info p {
+    margin: 3px 0;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* BOTÓN */
+.juego-info button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.juego-info button:hover {
+    background: #0ea5e9;
+}
+
+/* BOTÓN VOLVER */
+.barra-superior {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.btn-volver {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-volver:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+/* ESTRELLAS */
+.estrellas {
+    color: gold;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* CONTENEDOR */
+.juegos-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* TARJETA */
+.juego-card {
+    background: #020617;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(56,189,248,0.2);
+}
+
+/* HOVER */
+.juego-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* IMAGEN */
+.juego-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 10px auto;
+    display: block;
+    transition: 0.3s;
+}
+
+/* ZOOM */
+.juego-card:hover img {
+    transform: scale(1.1);
+}
+
+/* ETIQUETA */
+.tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #38bdf8;
+    color: #020617;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+/* INFO */
+.juego-info h3 {
+    margin: 10px 0 5px;
+}
+
+.juego-info p {
+    margin: 3px 0;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* RATING */
+.rating {
+    color: gold;
+    font-weight: bold;
+}
+
+/* BARRA */
+.popularidad {
+    height: 6px;
+    background: #1e293b;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.popularidad div {
+    height: 100%;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+/* INFO EXTRA */
+.extra {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #38bdf8;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* MOSTRAR EN HOVER */
+.juego-card:hover .extra {
+    opacity: 1;
+}
+
+/* BOTÓN VOLVER */
+.barra-superior {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.btn-volver {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-volver:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+/* TITULO */
+.titulo-nosotros {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+/* CONTENEDOR */
+.nosotros-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* TARJETAS */
+.nosotros-card {
+    background: linear-gradient(145deg, #020617, #0f172a);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 0 10px rgba(56,189,248,0.2);
+    transition: 0.3s;
+}
+
+/* HOVER */
+.nosotros-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+.nosotros-card h3 {
+    margin-bottom: 10px;
+}
+
+.nosotros-card p {
+    color: #94a3b8;
+}
+
+/* TITULO */
+.titulo-contacto {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+/* CONTENEDOR */
+.contacto-container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* FORMULARIO */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: linear-gradient(145deg, #020617, #0f172a);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(56,189,248,0.2);
+}
+
+/* INPUTS */
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* BOTÓN */
+.formulario button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background: #0ea5e9;
+}
+#lista-juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+}
+.titulo-venta {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+.venta-container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}   

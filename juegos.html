@@ -1,29 +1,99 @@
-<header>
-    <h1>🎮 GamingZone</h1>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="juegos.html">Juegos</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-    <h2 style="text-align:center;">Juegos Populares</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GamingZone</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
 
-<div class="contenedor">
-
-    <div class="card">
-        <h3>FIFA 26</h3>
-        <p>Fútbol realista</p>
-    </div>
-
-    <div class="card">
-        <h3>Call of Duty</h3>
-        <p>Acción y disparos</p>
-    </div>
-
-    <div class="card">
-        <h3>GTA V</h3>
-        <p>Mundo abierto</p>
-    </div>
-
+<div class="barra-superior">
+    <button class="btn-volver" onclick="history.back()">⬅ Volver</button>
 </div>
-</header>
+
+<h2 class="titulo-juegos">🎮 Catálogo de Juegos</h2>
+
+<div class="juegos-container">
+
+    <div class="juego-card">
+        <span class="tag">TOP</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0yYUr-RHwVuiiV6ydUrgVEB8b0RuBvNBJOQ&s">
+        <div class="juego-info">
+            <h3>Call of Duty Warzone</h3>
+            <p>🎮 Acción • PC / Consola</p>
+            <p class="rating">⭐ 9.8 / 10</p>
+
+            <div class="popularidad">
+                <div style="width: 95%"></div>
+            </div>
+
+            <div class="extra">🔥 Muy jugado online</div>
+        </div>
+    </div>
+
+    <div class="juego-card">
+        <span class="tag">NEW</span>
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/FIFA_22_Cover.jpg">
+        <div class="juego-info">
+            <h3>FIFA 22</h3>
+            <p>⚽ Deportes • PS4 / PS5</p>
+            <p class="rating">⭐ 9.2 / 10</p>
+
+            <div class="popularidad">
+                <div style="width: 85%"></div>
+            </div>
+
+            <div class="extra">⚽ Torneos activos</div>
+        </div>
+    </div>
+
+    <div class="juego-card">
+        <img src="https://cdn1.epicgames.com/offer/fn/FNBR_40-00_C7S2_EGS_Launcher_FN_Blade_1200x1600_1200x1600-da9380cb4935429a8db7f55ed603ead7">
+        <div class="juego-info">
+            <h3>Fortnite</h3>
+            <p>🔥 Battle Royale • Multiplataforma</p>
+            <p class="rating">⭐ 9.0 / 10</p>
+
+            <div class="popularidad">
+                <div style="width: 80%"></div>
+            </div>
+
+            <div class="extra">🌍 Eventos en vivo</div>
+        </div>
+    </div>
+<div class="juego-card">
+    <span class="tag">TOP</span>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Minecraft_2024_cover_art.png/250px-Minecraft_2024_cover_art.png">
+    <div class="juego-info">
+        <h3>Minecraft</h3>
+        <p>🧱 Sandbox • Multiplataforma</p>
+        <p class="rating">⭐ 9.7 / 10</p>
+
+        <div class="popularidad">
+            <div style="width: 92%"></div>
+        </div>
+
+        <div class="extra">🌍 Creatividad sin límites</div>
+    </div>
+    <h2 style="text-align:center;">🛒 Juegos en venta</h2>
+<div id="lista-juegos"></div>
+
+<script>
+const lista = document.getElementById("lista-juegos");
+const juegos = JSON.parse(localStorage.getItem("juegos")) || [];
+
+juegos.forEach(j => {
+    const div = document.createElement("div");
+    div.classList.add("juego-card");
+
+    div.innerHTML = `
+        <h3>${j.nombre}</h3>
+        <p>${j.categoria} • ${j.plataforma}</p>
+        <p>$${j.precio}</p>
+        <p>${j.descripcion}</p>
+    `;
+
+    lista.appendChild(div);
+});
+</script>
+</div>
+</div>
